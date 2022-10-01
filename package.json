@@ -6,7 +6,8 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "name": "comp3123-exec04",
   "description": "just testing if repo is in sync",
