@@ -23,3 +23,16 @@ app.get('/hello', (req, res) => {
 app.get('/user', (req, res) => {
   res.send(JSON.stringify(req.query));
 });
+
+app.post('/user/:fnm/:lnm', (req, res) => {
+  const s = req.params;
+
+  let first_name = s.fnm;
+  let last_name = s.lnm;
+
+  const userFirstAndLast = {
+    first_name,
+    last_name,
+  };
+  res.json(userFirstAndLast);
+});
